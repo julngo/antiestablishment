@@ -1,0 +1,23 @@
+{
+  "name": "bimd353project",
+  "version": "1.0.0",
+  "description": "marketing and campaign website for bimd353 project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julngo/bimd353project.git"
+  },
+  "author": "Su Li, Julian Ngo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julngo/bimd353project/issues"
+  },
+  "homepage": "https://github.com/julngo/bimd353project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}
