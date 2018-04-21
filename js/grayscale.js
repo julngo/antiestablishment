@@ -1,4 +1,25 @@
 (function($) {
+  //modifer for loader
+  $( document ).ready(function() {
+      $('#load').css('opacity', '0').delay(1000).queue(function() {
+        if ($('#buttonPic').length) {
+          $("#buttonPic").animate({
+            opacity: 0.5
+          }, 500, function() {
+            // Animation complete.
+          }).delay(3000).queue(function() {
+            $('#load').css('display','none');
+          });
+          }
+          if ($('#bottom-navbar').length) {
+            $('#top-navbar').addClass("slideDown").delay(500).queue(function() {
+              $("#bottom-navbar").addClass("slideUp");
+            });
+          }
+      })
+  });
+
+
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -20,10 +19,20 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
   <link href="css/indexStyle.css" rel="stylesheet">
-
+  <style>
+    #load{
+      transition: opacity 4s;
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      z-index: 100;
+      position: absolute;
+    }
+  </style>
 </head>
 
 <body id="page-top">
+  <div id="load"></div>
   <i id="buttonClose" class="far fa-times-circle" onclick="stopVideo()"></i>
   <!-- Video -->
   <div id="bideoContainer">
@@ -50,9 +59,9 @@
   <div id="bottom-navbar">
     <ul>
       <li><a href="town">Town Imdy</a></li>
-      <li><a href="">Files</a></li>
-      <li><a href="moreInfo.html">More Information</a></li>
-      <li><a href="">Who We Are</a></li>
+      <li><a href="">Character Files</a></li>
+      <li><a href="moreInfo.html">Join Investigation</a></li>
+      <li><a href="">About us</a></li>
     </ul>
   </div>
 
