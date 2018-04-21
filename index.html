@@ -1,96 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
         <title>The Anti-Establishment</title>
 
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom fonts for this template -->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
-        <link href="css/grayscale.min.css" rel="stylesheet">
-        <link href="css/indexStyle.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/indexStyle.css" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body id="page-top">
-      
-        <!-- Video -->
-        <video id="bideo" poster="img/star-wars-poster.png">
+<body id="page-top">
+  <i id="buttonClose" class="far fa-times-circle" onclick="stopVideo()"></i>
+  <!-- Video -->
+  <div id="bideoContainer">
+    <div id="bideoBg"></div>
+    <video id="bideo">
             <source src="video/StarWars.mp4" type="video/mp4">
-        </video>
-        <!-- Top Navigation -->
+            </video>
+    <i id="buttonPic" class="far fa-play-circle" onclick="playVideo()"></i>
+  </div>
+  <!-- Top Navigation -->
 
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div id="top-navbar">
-                <ul>
-                    <li style="float: left"><p>LOGO</p></li>
-                    <li style="float: right"><p>Anti-Establishment</p></li>
-                </ul>
-            </div>
-    <!--
-          <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-              <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-    -->
-        </nav>
+  <div id="top-navbar">
+    <ul>
+      <li>
+        <p>LOGO</p>
+      </li>
+      <li style="float: right">
+        <p>Anti-Establishment</p>
+      </li>
+    </ul>
+  </div>
 
-        <!-- play button -->
-        <div class="playButton">
-            <img id="buttonPic" src="img/playArrow.png" onclick="playVideo()">
-        </div>
-        <!-- Bottom navbar-->
-        <div id="bottom-navbar">
-            <ul>
-                <li><a href="">Imdy's Website</a></li>
-                <li><a href="">People of Imdy</a></li>
-                <li><a href="moreInfo.html">More Information</a></li>
-                <li><a href="">Who We Are</a></li>
-            </ul>
-        </div>
+  <!-- Bottom navbar-->
+  <div id="bottom-navbar">
+    <ul>
+      <li><a href="town">Town Imdy</a></li>
+      <li><a href="">Files</a></li>
+      <li><a href="moreInfo.html">More Information</a></li>
+      <li><a href="">Who We Are</a></li>
+    </ul>
+  </div>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-        <!-- Custom scripts for this template -->
-        <script src="js/grayscale.min.js"></script>
-        <script src="js/indexScript.js"></script>
-
-    </body>
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.js"></script>
+  <script src="js/indexScript.js"></script>
+</body>
 
 </html>

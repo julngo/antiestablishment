@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
 <head>
 
   <meta charset="utf-8">
@@ -7,71 +8,63 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Welcome to Imdy</title>
+  <title>Game Name</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../css/grayscale.min.css" rel="stylesheet">
-  <link href="../css/town.css" rel="stylesheet">
-</head>
-  <body id="page-top">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-          <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Town of Imdy</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-              <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#download">News</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#contact">Calendar</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
 
-        <!-- Intro Header -->
-        <header class="masthead">
-          <div class="intro-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <h3>Welcome to</h3>
-                  <h1 class="brand-heading">Town Imdy</h1>
-                </div>
-            </div>
-          </div>
-        </header>
-        <!-- About Section -->
-        <section class="content-section text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                  <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by
-                  <a href="http://gratisography.com/">Gratisography</a>
-                  along with a custom Google Maps skin courtesy of
-                  <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
-              </div>
-            </div>
-          </div>
-        </section>
-  </body>
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/indexStyle.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <i id="buttonClose" class="far fa-times-circle" onclick="stopVideo()"></i>
+  <!-- Video -->
+  <div id="bideoContainer">
+    <div id="bideoBg"></div>
+    <video id="bideo">
+            <source src="video/StarWars.mp4" type="video/mp4">
+            </video>
+    <i id="buttonPic" class="far fa-play-circle" onclick="playVideo()"></i>
+  </div>
+  <!-- Top Navigation -->
+
+  <div id="top-navbar">
+    <ul>
+      <li>
+        <p>LOGO</p>
+      </li>
+      <li style="float: right">
+        <p>Anti-Establishment</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Bottom navbar-->
+  <div id="bottom-navbar">
+    <ul>
+      <li><a href="town">Town Imdy</a></li>
+      <li><a href="">Files</a></li>
+      <li><a href="moreInfo.html">More Information</a></li>
+      <li><a href="">Who We Are</a></li>
+    </ul>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.js"></script>
+  <script src="js/indexScript.js"></script>
+</body>
+
 </html>
