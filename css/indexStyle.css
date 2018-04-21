@@ -1,38 +1,38 @@
-.bideo{
+#bideo{
     width: 100%;
-    height: 85%;
-    
+    height: 85%;   
 }
-
-.playButton{
-    
-}
-
 .playButton img{
-    width: 100%;
-    height: 100%;
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    top: 40%;
+    right: 50%;
 }
 
-.bottom-navbar{
+.playButton img:hover:not(.active){
+    background-color: rgba(255,255,255,0.1);
+}
+
+#bottom-navbar{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 15px;
 }
 
-.bottom-navbar ul {
+#bottom-navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.bottom-navbar ul li {
+#bottom-navbar ul li {
     float: left;
     font-family: 'Raleway', sans-serif;
     width: 25%;
 }
 
-.bottom-navbar ul li a {
+#bottom-navbar ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -40,26 +40,26 @@
     text-decoration: none;
 }
 
-.bottom-navbar ul li a:hover:not(.active) {
+#bottom-navbar ul li a:hover:not(.active) {
     background-color: rgba(255,255,255,0.1);
 }
-.top-navbar{
+#top-navbar{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 15px;
     width: 80%;
 }
-.top-navbar ul {
+#top-navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-.top-navbar ul li {
+#top-navbar ul li {
     float: left;
     font-family: 'Raleway', sans-serif;
 }
-.top-navbar ul li p {
+#top-navbar ul li p {
     display: block;
     color: white;
     text-align: center;
