@@ -1,6 +1,7 @@
 .masthead{
   background-image: url(../img/town-bg.jpg);
   background-attachment: fixed;
+  background-position: bottom;
   font-weight: 300!important;
   margin: 0%!important;
   height: 65vh;
@@ -16,5 +17,5 @@
   padding-right: 0.75em!important;
 }
 .nav-item a:hover{
-  background-color: rgba(255, 255, 255, 0.075)!important;
+  background-color: rgba(53, 166, 160, 0.25)!important;
 }
