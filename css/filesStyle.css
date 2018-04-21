@@ -5,11 +5,13 @@
 
 #left-arrow-content{
     float: left;
-    
+}
+#left-arrow-content img{
+    width: 200px;
 }
 
 #right-arrow-content{
-    
+    float: right;
 }
 
 #player-information-content{
@@ -17,17 +19,17 @@
     height: 550px;
 }
 
-.item-name{
+#profile-name{
     width: 450px;
     height: 150px;
 }
 
-.item-desc{
+#profile-description{
     width: 450px;
     height: 400px;
 }
 
-.item-pic{
+#profile-picture{
     width: 300px;
     height: 550px;
 }
