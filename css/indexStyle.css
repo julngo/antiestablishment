@@ -1,6 +1,11 @@
 *{
   transition: opacity 0.5s;
 }
+body{
+  width: 100%;
+  margin: 0%;
+  overflow: hidden;
+}
 #bideo{
   opacity: 0;
   position: absolute;
@@ -15,11 +20,12 @@
   overflow: hidden;
   width: 100%;
   margin: 0%;
-  height: 92.5vh;
+  height: 95vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 #bideoBg{
   z-index:1;
@@ -31,13 +37,18 @@
   background-image: url('../img/poster-bg.jpg');
   background-size: cover;
   background-position: center;
+  -webkit-box-shadow: inset 0px -50px 95px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px -50px 95px 0px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px -50px 95px 0px rgba(0, 0, 0, 1);
 }
 .far{
-    z-index: 100;
     transition: opacity 0.25s;
     font-size: 5rem;
-    opacity: 0.5;
     cursor: pointer;
+}
+#buttonPic{
+  opacity: 0;
+  z-index: 100;
 }
 #buttonClose{
   opacity: 0;
@@ -49,24 +60,32 @@
 }
 
 #bottom-navbar{
+  z-index: 100;
   position: absolute;
-  bottom: 0%;
-  height: 7.5vh;
+  bottom: -15%;
+  height: 15vh;
   width: 100%;
+  background: #000000;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,1) 100%);
+  /* background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); */
 }
 
 #bottom-navbar ul {
     list-style-type: none;
-    margin: 0%;
+    margin: auto;
+    width: 80%;
     padding: 0%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     height: 100%;
 }
 
 #bottom-navbar ul li {
     cursor: pointer;
     transition: all 0.35s;
-    width: 25%;
+    width: auto;
     float: left;
     height: 100%;
     text-align: center;
@@ -80,7 +99,7 @@
     padding: 1.25rem;
     color: white;
     display: inline-flex;
-    align-items: center;
+    align-items:  flex-end;
     height: 100%;
     text-decoration: none;
 }
@@ -98,7 +117,7 @@
 #top-navbar{
   width: 100%;
   position: absolute;
-  top: 0%;
+  top: -15%;
   z-index: 10;
 }
 #top-navbar ul {
@@ -118,4 +137,34 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+/* responsive stuff */
+@media (min-width: 1024px) and (max-width: 1550px){
+  #bottom-navbar ul li a {
+    font-size: 1rem;
+  }
+}
+@keyframes slideDown {
+    0% {
+      top: -15%;
+    }
+    100% {
+      top: -0%;
+    }
+}
+@keyframes slideUp {
+    0% {
+      bottom: -15%;
+    }
+    100% {
+      bottom: -0%;
+    }
+}
+.slideUp{
+ -webkit-animation: 1.75s slideUp ease-in-out forwards;
+ animation: 1.75s slideUp ease-in-out forwards;
+}
+.slideDown{
+ -webkit-animation: 1.75s slideDown ease-in-out forwards;
+ animation: 1.75s slideDown ease-in-out forwards;
 }
