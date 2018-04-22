@@ -1,3 +1,4 @@
+//characters info data
 var charactersInfo = [
   {
     name: "Tobi Kowalski",
@@ -50,44 +51,53 @@ var charactersInfo = [
     img: "http://www.jacksonspalding.com/wp-content/uploads/2017/04/person-solo-placeholder-guy-2.png"
   }
 ];
+//character info data end
 
-var currentIndex = 0;
+
+var currentIndex = 0; //keeps track of current index of character info
+
 $(document).ready(function() {
-  //init
+  //init-add names to the bottom tabs span tags
   $('.tabs span').each(function(key, val){
     var name = charactersInfo[key].name;
     $(this).text(name);
   });
-
-  $('#profile-name').text(charactersInfo[0].name);
+  
+  //init landing page content of first character in database
+  $('#profile-name').text(charactersInfo[0].name); 
   $('#profile-info').text(charactersInfo[0].des);
   $('#profilePic img').attr("src", charactersInfo[0].img);
 
 });
-$('.arrows').click(function(){
-  if(this.id == "left-arrow"){
-    currentIndex--;
-    if(currentIndex < 0){
+
+$('.arrows').click(function(){ //if either arrow was clicked
+  if(this.id == "left-arrow"){ //if left arrow was clicked
+    currentIndex--; //decreases index
+    if(currentIndex < 0){ //keeps index in bound
       currentIndex = 9;
     }
   }
-  if(this.id == "right-arrow"){
-    currentIndex++;
-    if(currentIndex > 9){
+  if(this.id == "right-arrow"){ //if right arrow was clicked
+    currentIndex++; //increases index
+    if(currentIndex > 9){ //keeps index in bound
       currentIndex = 0;
     }
   }
   updateInfo(currentIndex);
 });
+
 $('.tabs span').click(function() {
   var index = $('.tabs span').index(this);
   updateInfo(index);
+  //also needs to set currentIndex to the clicked tab index
 });
 
 function updateInfo(index){
+  //gets info according to index
   var name = charactersInfo[index].name;
   var description = charactersInfo[index].des;
   var url = charactersInfo[index].img;
+  //updates html content
   $('#profile-name').text(name);
   $('#profile-info').text(description);
   $('#profilePic img').attr("src", url);
