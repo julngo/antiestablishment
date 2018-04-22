@@ -51,7 +51,7 @@ var charactersInfo = [
   }
 ];
 
-
+var currentIndex = 0;
 $(document).ready(function() {
   //init
   $('.tabs span').each(function(key, val){
@@ -64,13 +64,31 @@ $(document).ready(function() {
   $('#profilePic img').attr("src", charactersInfo[0].img);
 
 });
-
+$('.arrows').click(function(){
+  if(this.id == "left-arrow"){
+    currentIndex--;
+    if(currentIndex < 0){
+      currentIndex = 9;
+    }
+  }
+  if(this.id == "right-arrow"){
+    currentIndex++;
+    if(currentIndex > 9){
+      currentIndex = 0;
+    }
+  }
+  updateInfo(currentIndex);
+});
 $('.tabs span').click(function() {
   var index = $('.tabs span').index(this);
+  updateInfo(index);
+});
+
+function updateInfo(index){
   var name = charactersInfo[index].name;
   var description = charactersInfo[index].des;
   var url = charactersInfo[index].img;
   $('#profile-name').text(name);
   $('#profile-info').text(description);
   $('#profilePic img').attr("src", url);
-});
+}
