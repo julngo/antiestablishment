@@ -1,21 +1,83 @@
+body{
+  background-color: white;
+  color: #1c1c1c;
+  cursor: default;
+}
+a{
+  cursor: pointer;
+}
+img{
+  max-width: 100%;
+}
+h1.text-center{
+  letter-spacing: 0.25rem;
+  font-size: 3.5rem;
+  margin-bottom: 7.5%;
+  color:#334682;
+}
+.content-section{
+  padding: 75px 0;
+}
+#mainNav{
+  background-color: #31335c;
+}
+#mainNav ul{
+  margin: auto;
+}
 .masthead{
-  background-image: url(../img/town-bg.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  font-weight: 300!important;
+  background-image: url(../img/town/town-bg.jpg);
   margin: 0%!important;
-  height: 65vh;
+  height: 50vh;
 }
 .masthead h3, .masthead h1{
+  color: #1c1c1c;
   margin: 0%!important;
+  font-weight: 300!important;
 }
-.masthead h1{
-  letter-spacing: 0.5rem;
+.masthead h1, h1.text-center{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  text-transform: capitalize;
 }
-.nav-item a{
+.nav-link{
   padding-left: 0.75em!important;
   padding-right: 0.75em!important;
 }
-.nav-item a:hover{
-  background-color: rgba(53, 166, 160, 0.25)!important;
+.nav-link:hover{
+  background-color: rgba(255, 255, 255, 0.1)!important;
+}
+.page-footer{
+  width: 100%;
+  padding: 25px 0;
+  background-color:#31335c;
+  color: white;
+}
+.page-footer .container-fluid{
+  width: 80%;
+  margin: auto;
+}
+.page-footer a{
+  padding-left: 5%;
+  color: white;
+  opacity: 0.75
+}
+.page-footer a:hover{
+  opacity: 1
+}
+.page-footer .col-md-5{
+  text-align: right;
+}
+q{
+  font-size: 2rem;
+  font-weight: bold;
+  color:#334682;
+  font-style: italic;
+}
+@media (min-width: 1024px) and (max-width: 1550px){
+  .masthead h3{
+    font-size: 25px;
+  }
+  .masthead h1{
+    font-size: 75px!important;
+  }
 }

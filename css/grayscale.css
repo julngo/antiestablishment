@@ -105,7 +105,7 @@ a:focus, a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: black;
+    background-color: rgba(0,0,0, 0.75);
   }
   #mainNav .nav-link.active {
     outline: none;
@@ -113,6 +113,9 @@ a:focus, a:hover {
   }
   #mainNav .nav-link.active:hover {
     color: white;
+  }
+  #mainNav .nav-link:hover{
+    background-color: rgba(255, 255, 255, 0.1)!important;
   }
 }
 

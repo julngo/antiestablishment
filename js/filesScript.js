@@ -62,9 +62,9 @@ $(document).ready(function() {
     var name = charactersInfo[key].name;
     $(this).text(name);
   });
-  
+
   //init landing page content of first character in database
-  $('#profile-name').text(charactersInfo[0].name); 
+  $('#profile-name').text(charactersInfo[0].name);
   $('#profile-info').text(charactersInfo[0].des);
   $('#profilePic img').attr("src", charactersInfo[0].img);
 
@@ -89,7 +89,7 @@ $('.arrows').click(function(){ //if either arrow was clicked
 $('.tabs span').click(function() {
   var index = $('.tabs span').index(this);
   updateInfo(index);
-  //also needs to set currentIndex to the clicked tab index
+  currentIndex = index;
 });
 
 function updateInfo(index){
