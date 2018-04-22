@@ -63,3 +63,9 @@
   color: #44b649;
   border-color: #44b649;
 }
+
+@media (min-width: 1024px) and (max-width: 1550px){
+    selector{
+/*         css*/
+    }
+}
