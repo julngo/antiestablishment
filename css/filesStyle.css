@@ -1,30 +1,65 @@
-#left-arrow-content{
-    float: left;
+
+.arrows img{
+    transition: all 0.25s;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    width: 50px;
+    cursor: pointer;
 }
-#left-arrow-content img{
-    width: 200px;
+.arrows img:hover{
+  filter: none;
+}
+.arrows{
+  position: absolute;
+}
+#left-arrow{
+    left: 0%;
+    top: 35%;
+}
+#right-arrow{
+    right: 0%;
+    top: 35%;
 }
 
-#right-arrow-content{
-    float: right;
+#main-content{
+  position: relative;
+  width: 80%;
+  height: 83vh;
+  margin: auto;
 }
-
-#player-information-content{
-    width: 750px;
-    height: 550px;
+#profilePic, #profileInfo{
+  margin-top: 5%;
+  display: inline-block;
+  vertical-align: top;
 }
-
-#profile-name{
-    width: 450px;
-    height: 150px;
+#profileInfo{
+  color: white;
+  margin-left: 7.5%;
+  width: 46%;
+  height: 80%;
 }
-
-#profile-description{
-    width: 450px;
-    height: 400px;
+#profilePic{
+  margin-right: 7.5%;
+  margin-left: 3.5%;
+  width: 35%;
+  height: 80%;
+  text-align: center;
 }
-
-#profile-picture{
-    width: 300px;
-    height: 550px;
+.tabs{
+  position: absolute;
+  bottom: 1.5%;
+  width: 100%;
+}
+.tabs span{
+  width: 9.75%;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.25s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.tabs span:hover{
+  color: #44b649;
+  border-color: #44b649;
 }
