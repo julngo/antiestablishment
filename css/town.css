@@ -1,83 +1,231 @@
-body{
+body {
   background-color: white;
   color: #1c1c1c;
   cursor: default;
 }
-a{
+
+a {
   cursor: pointer;
 }
-img{
+
+img {
   max-width: 100%;
 }
-h1.text-center{
-  letter-spacing: 0.25rem;
-  font-size: 3.5rem;
-  margin-bottom: 7.5%;
-  color:#334682;
+
+p {
+  font-size: 1.25rem;
 }
-.content-section{
+
+h2 {
+  margin-bottom: 2.5%;
+}
+#loader{
+  transition: all 0.75s;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 100;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loader h1{
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  color: #334682;
+  -webkit-animation: 1.5s load ease-in-out infinite;
+}
+@keyframes load {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.25;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+h1.text-center {
+  letter-spacing: 0.25rem;
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+  color: #334682;
+}
+
+.content-section {
   padding: 75px 0;
 }
-#mainNav{
+
+#mainNav {
   background-color: #31335c;
 }
-#mainNav ul{
+
+#mainNav ul {
   margin: auto;
 }
-.masthead{
+
+.masthead {
+  background-position: center;
   background-image: url(../img/town/town-bg.jpg);
   margin: 0%!important;
   height: 50vh;
 }
-.masthead h3, .masthead h1{
-  color: #1c1c1c;
+
+.masthead h3, .masthead h1 {
+  color: white;
   margin: 0%!important;
   font-weight: 300!important;
 }
-.masthead h1, h1.text-center{
+
+.masthead h1, h1.text-center, .e-right h2, .news h2{
   font-family: 'Merriweather', serif;
   font-style: italic;
   text-transform: capitalize;
 }
-.nav-link{
+
+.nav-link {
   padding-left: 0.75em!important;
   padding-right: 0.75em!important;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1)!important;
 }
-.page-footer{
+
+.page-footer {
   width: 100%;
   padding: 25px 0;
-  background-color:#31335c;
+  background-color: #31335c;
   color: white;
 }
-.page-footer .container-fluid{
+
+.page-footer .container-fluid {
   width: 80%;
   margin: auto;
 }
-.page-footer a{
+
+.page-footer a {
   padding-left: 5%;
   color: white;
   opacity: 0.75
 }
-.page-footer a:hover{
+
+.page-footer a:hover {
   opacity: 1
 }
-.page-footer .col-md-5{
+
+.page-footer .col-md-5 {
   text-align: right;
 }
-q{
-  font-size: 2rem;
+
+q {
+  font-size: 1.5rem;
   font-weight: bold;
-  color:#334682;
+  color: #334682;
   font-style: italic;
 }
-@media (min-width: 1024px) and (max-width: 1550px){
-  .masthead h3{
+
+.event {
+  width: 100%;
+  display: flex;
+}
+
+.event div {
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+  width: 50%;
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5%;
+}
+hr{
+  border: 0;
+height: 1px;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.e-right {
+  text-align: left;
+  padding: 3.5%;
+}
+.e-right p{
+  margin-bottom: 3.5%;
+}
+.e-right h2{
+  font-size: 1.5rem;
+  color: #334682;
+  margin-bottom: 5%;
+}
+.e-left{
+  transition: all 0.25s;
+  opacity: 0.85;
+  background-position: center;
+  background-size: cover;
+}
+.event:hover .e-left{
+  opacity: 1;
+}
+.news div{
+  vertical-align: top;
+  display:inline-flex;
+  flex-direction: column;
+}
+.news-container
+{
+  width: 60%;
+  border-left: 1px dashed gray;
+}
+.news-content{
+  transition: all 0.5s;
+  cursor: text;
+  margin: 25px 0;
+  text-align: left;
+  padding: 0 0 0 5%;
+}
+.news-content h2{
+  font-size: 1.5rem;
+  font-style: normal;
+}
+.news-content p.time{
+  opacity: 0.75;
+  font-style: italic;
+}
+.news-content img{
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+.news-title{
+  width: 30%;
+  padding-right: 2.5%;
+}
+.news-title h2{
+  transition: all 0.25s;
+  cursor: pointer;
+  margin: 25px 0;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  color: #334682;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.news-title:hover h2{
+  opacity: 0.5;
+}
+.news-title h2:hover{
+  opacity: 1;
+}
+@media (min-width: 1024px) and (max-width: 1550px) {
+  .masthead h3 {
     font-size: 25px;
   }
-  .masthead h1{
+  .masthead h1 {
     font-size: 75px!important;
   }
 }
