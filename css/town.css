@@ -133,17 +133,20 @@ q {
 .event {
   width: 100%;
   display: flex;
+  min-height: 20rem;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.05);
+  transition: all 0.5s;
+  margin-bottom: 2.5%;
 }
 
 .event div {
-  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
   width: 50%;
   vertical-align: top;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.5%;
+  transition: all 0.25s;
 }
 hr{
   border: 0;
@@ -167,6 +170,11 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75
   opacity: 0.85;
   background-position: center;
   background-size: cover;
+}
+.event:hover{
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.25);
 }
 .event:hover .e-left{
   opacity: 1;
@@ -192,7 +200,7 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75
   font-size: 1.5rem;
   font-style: normal;
 }
-.news-content p.time{
+p.time{
   opacity: 0.75;
   font-style: italic;
 }
@@ -220,6 +228,11 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75
 }
 .news-title h2:hover{
   opacity: 1;
+}
+@media only screen and (min-width: 1551px) {
+  .container{
+    max-width: 1220px;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1550px) {
   .masthead h3 {
