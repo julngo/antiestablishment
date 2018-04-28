@@ -62,10 +62,11 @@
   transition: all 0.25s;
   cursor: pointer;
   border: 1px solid transparent;
+  color: #6a85c0;
 }
 .tabs span:hover{
-  color: #44b649;
-  border-color: #44b649;
+  color: #449048;
+  border-color: #449048;
 }
 
 @media (min-width: 1024px) and (max-width: 1550px){
