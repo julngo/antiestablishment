@@ -168,3 +168,8 @@ body{
  -webkit-animation: 1.75s slideDown ease-in-out forwards;
  animation: 1.75s slideDown ease-in-out forwards;
 }
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
