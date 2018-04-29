@@ -35,7 +35,7 @@ h2 {
 #loader h1{
   font-size: 5rem;
   letter-spacing: 0.5rem;
-  color: #334682;
+  color: #326c88;
   -webkit-animation: 1.5s load ease-in-out infinite;
 }
 @keyframes load {
@@ -54,7 +54,7 @@ h1.text-center {
   letter-spacing: 0.25rem;
   font-size: 2.5rem;
   margin-bottom: 5%;
-  color: #334682;
+  color: #326c88;
 }
 
 .content-section {
@@ -62,7 +62,7 @@ h1.text-center {
 }
 
 #mainNav {
-  background-color: #31335c;
+  background-color: #326c88;
 }
 
 #mainNav ul {
@@ -73,7 +73,7 @@ h1.text-center {
   background-position: center;
   background-image: url(../img/town/town-bg.jpg);
   margin: 0%!important;
-  height: 50vh;
+  height: 35vh;
 }
 
 .masthead h3, .masthead h1 {
@@ -100,7 +100,7 @@ h1.text-center {
 .page-footer {
   width: 100%;
   padding: 25px 0;
-  background-color: #31335c;
+  background-color: #326c88;
   color: white;
 }
 
@@ -126,7 +126,7 @@ h1.text-center {
 q {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #334682;
+  color: #326c88;
   font-style: italic;
 }
 
@@ -162,7 +162,7 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75
 }
 .e-right h2{
   font-size: 1.5rem;
-  color: #334682;
+  color: #326c88;
   margin-bottom: 5%;
 }
 .e-left{
@@ -208,6 +208,7 @@ p.time{
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  margin-bottom: 2.5%;
 }
 .news-title{
   width: 30%;
@@ -219,7 +220,7 @@ p.time{
   margin: 25px 0;
   line-height: 2rem;
   letter-spacing: 0.1rem;
-  color: #334682;
+  color: #326c88;
   font-size: 1.5rem;
   text-align: left;
 }
