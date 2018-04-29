@@ -22,7 +22,7 @@
     padding-top: 30px;
 }
 
-#top-navbar ul li p {
+#top-navbar ul li a p {
     display: block;
     color: #e8f3e4;
     text-align: center;
@@ -30,14 +30,7 @@
     text-decoration: none;
 }
 
-#top-navbar ul li a {
-    display: block;
-    color: #e8f3e4;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-#top-navbar ul li a:hover:not(.active) {
+#top-navbar ul li a p:hover:not(.active) {
     background-color: rgba(255,255,255,0.1);
 }
 
@@ -54,4 +47,8 @@
 .logo{
     width: 100px;
     height: 100px;
+}
+
+#top-navbar ul li a p #active{
+    color: #6a85c0;
 }
