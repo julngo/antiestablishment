@@ -22,21 +22,18 @@
     padding-top: 30px;
 }
 
-#top-navbar ul li a p {
-    display: block;
+#top-navbar ul li a div{
+    transition: all 0.25s;
     color: #e8f3e4;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    display:table-cell;
+    vertical-align : middle;
 }
-
-#top-navbar ul li a p:hover:not(.active) {
-    background-color: rgba(255,255,255,0.1);
-}
-
-#top-navbar li div{
-  display:table-cell;
-  vertical-align : middle;
+#top-navbar ul li a div:hover{
+  background-color: rgba(255,255,255,0.1);
+  color: #449048;
 }
 
 #main-content{
@@ -48,12 +45,11 @@
     font-size: 0.9rem;
   }
 }
-
-.logo{
-    width: 75px;
-    height: 75px;
+.logo:hover{
+  opacity: 1;
 }
-
-#top-navbar ul li a p #active{
-    color: #6a85c0;
+.logo{
+  opacity: 0.9;
+  width: 75px;
+  height: 75px;
 }
