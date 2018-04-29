@@ -1,7 +1,7 @@
 #top-navbar{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 15px;
+    margin-top: 0;
     width: 80%;
 }
 
@@ -10,11 +10,16 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    text-align: center;
 }
 
 #top-navbar ul li {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
+}
+
+.navText{
+    padding-top: 30px;
 }
 
 #top-navbar ul li p {
@@ -44,4 +49,9 @@
   #top-navbar ul li a{
     font-size: 0.9rem;
   }
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
 }
