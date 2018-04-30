@@ -15,6 +15,9 @@ img {
 p {
   font-size: 1.25rem;
 }
+p a{
+  color: #326c88;
+}
 
 h2 {
   margin-bottom: 2.5%;
@@ -82,7 +85,7 @@ h1.text-center {
   font-weight: 300!important;
 }
 
-.masthead h1, h1.text-center, .e-right h2, .news h2{
+.masthead h1, h1.text-center, .e-right h2, .news h2, p a{
   font-family: 'Merriweather', serif;
   font-style: italic;
   text-transform: capitalize;
@@ -151,7 +154,7 @@ q {
 hr{
   border: 0;
 height: 1px;
-background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+background-image: linear-gradient(to right, rgba(50, 108, 136, 0), rgba(50, 108, 136, 0.75), rgba(50, 108, 136, 0));
 }
 .e-right {
   text-align: left;
