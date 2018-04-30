@@ -1,24 +1,26 @@
+label{
+  margin: 0%;
+  color: #6a85c0;
+}
 input{
   display: block;
-  margin: 5% 0;
-  padding: 1.5%;
+  margin: 2.5% 0 7.5% 0;
+  padding: 1.5% 0;
   width: 100%;
   transition: all 0.25s;
   outline: none;
   background: none;
   border: none;
+  color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 ::-webkit-input-placeholder {
   color: #6a85c0;
 }
-input[type=text]{
-  color: white;
-}
-input[type=text]:focus{
+input:focus{
   border-color: white;
 }
-#submit{
+input[type=submit]{
   margin-top: 7.5%;
   font-weight: 600;
   cursor: pointer;
@@ -26,7 +28,8 @@ input[type=text]:focus{
   border: none;
   letter-spacing: 0.15rem;
   background: #6a85c0;
+  padding: 2.5% 0;
 }
-#submit:hover{
+input[type=submit]:hover{
   background: #449048
 }
