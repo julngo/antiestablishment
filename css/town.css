@@ -182,6 +182,7 @@ background-image: linear-gradient(to right, rgba(50, 108, 136, 0), rgba(50, 108,
 .event:hover .e-left{
   opacity: 1;
 }
+
 .news div{
   vertical-align: top;
   display:inline-flex;
@@ -190,9 +191,10 @@ background-image: linear-gradient(to right, rgba(50, 108, 136, 0), rgba(50, 108,
 .news-container
 {
   width: 60%;
-  border-left: 1px dashed gray;
+  border-left: 1px dashed #326c88;
 }
 .news-content{
+  min-height: 750px;
   transition: all 0.5s;
   cursor: text;
   margin: 25px 0;

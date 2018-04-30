@@ -18,4 +18,7 @@ $('.news-title h2').click(function(){
   var item = $('.news-content').get(index);
   $('.news-content').css('display', 'none');
   $(item).css('display', 'block');
+  $('html, body').animate({
+  scrollTop: ($('.news').offset().top)
+}, 250);
 });
