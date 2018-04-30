@@ -22,10 +22,20 @@ function playVideo(){
 vid.onended = function(){
   videoEnd();
 }
-$('.far').hover(function(){
+$('#bottom-navbar li').hover(function(){
+  $('#hoverSound').get(0).play();
+}, function(){
+  $('#hoverSound').get(0).pause();
+});
+$('#buttonPic').hover(function(){
+  $(this).css('opacity','1');
+  $('#hoverSound').get(0).play();
+}, function(){$(this).css('opacity','0.5')
+  $('#hoverSound').get(0).pause();
+});
+$('#buttonClose').hover(function(){
   $(this).css('opacity','1');
 }, function(){$(this).css('opacity','0.5')});
-
 function videoEnd(){
   $('#buttonPic').css('z-index', '50');
   $('#buttonClose').css('z-index', '-5');

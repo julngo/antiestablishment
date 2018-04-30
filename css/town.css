@@ -1,3 +1,4 @@
+
 body {
   background-color: white;
   color: #1c1c1c;
@@ -132,7 +133,17 @@ q {
   color: #326c88;
   font-style: italic;
 }
+::-moz-selection {
+  background: #326c88;
+  background: rgba(50, 108, 136, 0.2);
+  text-shadow: none;
+}
 
+::selection {
+  background: #326c88;
+  background: rgba(50, 108, 136, 0.2);
+  text-shadow: none;
+}
 .event {
   width: 100%;
   display: flex;

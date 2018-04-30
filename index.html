@@ -14,7 +14,7 @@
 
   <!-- Custom fonts for this template -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tajawal:200,300,400" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
@@ -33,6 +33,10 @@
 
 <body id="page-top">
   <div id="load"></div>
+  <!--audio -->
+  <audio id="hoverSound">
+    <source src="video/wave.mp3"></source>
+  </audio>
   <i id="buttonClose" class="far fa-times-circle" onclick="stopVideo()"></i>
   <!-- Video -->
   <div id="bideoContainer">
@@ -40,7 +44,7 @@
     <video id="bideo">
             <source src="video/video.mp4" type="video/mp4">
     </video>
-    <i id="buttonPic" class="far fa-play-circle" onclick="playVideo()"></i>
+    <div  onclick="playVideo()" id="buttonPic"><i class="far fa-play-circle"></i> <span>SEE NADIA'S STORY</span></div>
   </div>
   <!-- Top Navigation -->
 
