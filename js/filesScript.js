@@ -2,52 +2,122 @@
 var charactersInfo = [
   {
     name: "Tobi Kowalski",
-    des: "Tobias Kowalski was an Federal EPA Auditor who was called into the town of Imdy. He supports the Anti-Establishment group and works towards making sure that the environment is kept safe from malpractice of big corporation. He was recently found dead and the Anti-Establishment group has hired new detectives to figure out the mystery and to hopefully persuade them to join their cause. ",
+    des: "Tobi was a Federal EPA Auditor called into the town of Imdy. He supported the Anti-Establishment group and worked towards making sure that the environment was kept safe from malpractice of big corporations. His trip took a drastic turn and now the Anti-Establishment needs to call upon outside resources (you). ",
+    rep: "Tobi was recently found dead and the Anti-Establishment group has hired new detectives (you) to figure out the mystery and to hopefully persuade them to join their cause. Can you continue the work that Tobi left?",
+    status: "Deceased",
+    dob: "06/07/1987",
+    height: "6'3",
+    race: "Caucasian",
+    hair: "Brown",
+    eyes: "Dark brown",
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   },
   {
     name: "Nadia Kowalski",
     des: "Nadia Kowalski is Tobias’s sister.",
+    rep: "She was recently approached by The Anti-Establishment to work as a spokesperson against environmental harm. Contact her when possible, she may give valuable information in this investigation.",
+    status: "Alive",
+    dob: "09/10/1990",
+    height: "5'6",
+    race: "Caucasian",
+    hair: "Dark Brown",
+    eyes: "Light Brown",
     img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
   },
   {
     name: "Fiora S",
-    des: "Representative for the Establishment Co.. Fiora is a short friendly asian lady who has been the Auditor for Imdy since before the town has started to have its mishaps.",
+    des: "Fiora has been the Corporate Auditor for Imdy since before the town has started to have its mishaps. She has been working as the spokesperson and auditor for Establishment Mining Corps. since Establishment Corp started its place in Imdy.",
+    rep: "She was the first person to meet Tobias in Imdy.",
+    status: "Alive",
+    dob: "01/20/1991",
+    height: "5'3",
+    race: "Asian",
+    hair: "Black",
+    eyes: "Dark Brown",
     img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
   },
   {
     name: "Secretary",
     des: "Slave for Agent S",
+    rep: "",
+    status: "",
+    dob: "",
+    height: "",
+    race: "",
+    hair: "",
+    eyes: "",
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   },
   {
     name: "Esha Sharma",
     des: "The Mayor of Imdy believes that having the mining corporation in the town is beneficial because its creating jobs for the town, also the corporation gave money to the mayors reelection campaign last year, in order to make friends with the mayor, so she will let them buy up more land.",
+    rep: "",
+    status: "",
+    dob: "",
+    height: "",
+    race: "",
+    hair: "",
+    eyes: "",
     img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
   },
   {
     name: "Axel Kimberly",
     des: "The Secretary for the mayor of Imdy is aware of the money the mayor received from the corporation but doesn’t want to say anything because they are a brand new intern and don’t want to mess up a great job in the town of imdy. The Kimberly family lives in town and comes from old money, which also contributed to the mayor's campaign, and to Axel being hired.",
+    rep: "",
+    status: "",
+    dob: "",
+    height: "",
+    race: "",
+    hair: "",
+    eyes: "",
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   },
   {
     name: "Jim Morgan",
     des: "The Kale Farmer in Imdy and owner of a large plot of land farther in the valley, he has had issues with her irrigation system and recently has found highly acidic water in her reservoir. He has also been pressured for the last year or so to try and sell parts of his land to the mining company, and the company is starting to become more violent.",
+    rep: "",
+    status: "",
+    dob: "",
+    height: "",
+    race: "",
+    hair: "",
+    eyes: "",
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   },
   {
     name: "John Hennesey",
     des: "The Mining Foreman. Hired by the Establishment. He believes what he is doing is bringing a great service to bringing energy to the public. He’s worked his ass off to be in the position is in today",
+    rep: "",
+    status: "",
+    dob: "",
+    height: "",
+    race: "",
+    hair: "",
+    eyes: "",
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   },
   {
     name: "Chief",
     des: "Head Chief in Imdy Police Station, working with Anti-Establishment association",
+    rep: "",
+    status: "",
+    dob: "",
+    height: "",
+    race: "",
+    hair: "",
+    eyes: "",
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   },
   {
     name: "Dr. Park",
     des: "Science lab leader and data analyst of Imdy Police Station",
+    rep: "",
+    status: "",
+    dob: "",
+    height: "",
+    race: "",
+    hair: "",
+    eyes: "",
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   }
 ];
@@ -64,11 +134,7 @@ $(document).ready(function() {
   });
 
   //init landing page content of first character in database
-  $('#profile-name').text(charactersInfo[0].name);
-  $('#profile-info').text(charactersInfo[0].des);
-  var path = "url("+"'"+charactersInfo[0].img+"')";
-  $('#profilePic').css("background-image", path);
-
+  updateInfo(0);
 });
 
 $('.arrows').click(function(){ //if either arrow was clicked
@@ -95,12 +161,16 @@ $('.tabs span').click(function() {
 
 function updateInfo(index){
   //gets info according to index
-  var name = charactersInfo[index].name;
-  var description = charactersInfo[index].des;
-  var url = charactersInfo[index].img;
-  var path = "url("+"'"+url+"')";
+  var path = "url("+"'"+charactersInfo[index].img+"')";
   //updates html content
-  $('#profile-name').text(name);
-  $('#profile-info').text(description);
+  $('#profile-name').text(charactersInfo[index].name);
+  $('#profile-info').text(charactersInfo[index].des);
+  $('#profile-report').text(charactersInfo[index].rep);
+  $('#profile-status').text(charactersInfo[index].status);
+  $('#profile-dob').text(charactersInfo[index].dob);
+  $('#profile-height').text(charactersInfo[index].height);
+  $('#profile-race').text(charactersInfo[index].race);
+  $('#profile-hair').text(charactersInfo[index].hair);
+  $('#profile-eyes').text(charactersInfo[index].eyes);
   $('#profilePic').css("background-image", path);
 }

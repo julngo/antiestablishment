@@ -104,20 +104,21 @@
   .arrows img {
     width: 25px;
   }
-  #profilePic, #profileInfo {
-    height: 65%;
-  }
   .tabs span {
     padding: 0.5rem;
     width: 15%;
   }
   #main-content {
-    height: 80%;
+    height: 77.5%;
   }
-  #profile-info {
-    font-size: 1rem;
+  #profileInfo p{
+    font-size: 0.9rem;
   }
-  #profile-name {
+  #profileInfo h1{
     font-size: 1.75rem;
+  }
+  #stamp{
+    min-width: 175px;
+    min-height: 175px;
   }
 }
