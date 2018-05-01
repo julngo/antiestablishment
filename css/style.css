@@ -23,7 +23,6 @@
 
 #top-navbar ul li {
     display: inline-block;
-    font-family: 'Raleway', sans-serif;
 }
 
 .navText{
@@ -48,9 +47,21 @@
     margin-left: 10%;
     margin-right: 10%;
 }
+#main-content h1, h5{
+  color: #6a85c0;
+}
+#main-content p{
+  font-size: 1.25rem;
+}
+#main-content img{
+  max-width: 100%;
+}
 @media (min-width: 1024px) and (max-width: 1550px) {
   #top-navbar ul li a{
     font-size: 0.9rem;
+  }
+  #main-content p{
+    font-size: 1rem;
   }
 }
 .logo:hover{

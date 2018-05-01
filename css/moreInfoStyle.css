@@ -1,6 +1,6 @@
 label{
   margin: 0%;
-  color: #6a85c0;
+  color: #449048;
 }
 input{
   display: block;
@@ -13,9 +13,6 @@ input{
   border: none;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-::-webkit-input-placeholder {
-  color: #6a85c0;
 }
 input:focus{
   border-color: white;
@@ -32,4 +29,15 @@ input[type=submit]{
 }
 input[type=submit]:hover{
   background: #449048
+}
+
+i{
+  color: #449048;
+  transition: all 0.25s;
+  opacity: 0.5;
+  margin-right: 1.5%;
+}
+i:hover{
+  opacity: 1;
+  color:  #6a85c0;
 }
