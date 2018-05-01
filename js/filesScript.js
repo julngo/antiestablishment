@@ -37,8 +37,8 @@ var charactersInfo = [
     img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
   },
   {
-    name: "Mark Wong",
-    des: "Mark has been working under Fiora since she started working as the Auditor for Imdy. He assists her with her research.",
+    name: "Mark Wang",
+    des: "Mark is Ryan Wang's Younger brother. He has been working under Fiora since she started working as the Auditor for Imdy. He assists her with her research.",
     rep: "Since Tobias's murder, he's been in Imdy often, only leaving to go to meetings at the Corporation.",
     status: "Alive",
     dob: "05/22/1993",
