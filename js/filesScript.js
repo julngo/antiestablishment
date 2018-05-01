@@ -14,8 +14,8 @@ var charactersInfo = [
   },
   {
     name: "Nadia Kowalski",
-    des: "Nadia Kowalski is Tobias’s sister.",
-    rep: "She was recently approached by The Anti-Establishment to work as a spokesperson against environmental harm. Contact her when possible, she may give valuable information in this investigation.",
+    des: "Nadia is Tobi’s sister. She works for an east coast company and is highly successful. Tobi is her only sibling and she is fiercely protective of him.",
+    rep: "Upon learning of her brother’s death, Nadia traveled to Imdy. She has been aimlessly wandering through town grief stricken and looking as lost as her heart feels.  The Anti-Establishment has promised her answers. Can you help her find them?",
     status: "Alive",
     dob: "09/10/1990",
     height: "5'6",
