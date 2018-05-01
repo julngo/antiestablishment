@@ -97,7 +97,7 @@ var charactersInfo = [
     img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
   },
   {
-    name: "Chief",
+    name: "Chief Martinez",
     des: "Head Chief in Imdy Police Station, working with Anti-Establishment association",
     rep: "",
     status: "",

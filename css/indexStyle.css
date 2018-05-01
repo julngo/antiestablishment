@@ -148,12 +148,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.15rem;
 }
-/* responsive stuff */
-@media (min-width: 1024px) and (max-width: 1550px){
-  #bottom-navbar ul li a {
-    font-size: 1rem;
-  }
-}
+
 @keyframes slideDown {
     0% {
       top: -15%;
@@ -182,4 +177,17 @@ body{
 .logo{
   width: 75px;
   height: 75px;
+}
+/* responsive stuff */
+@media (min-width: 1024px) and (max-width: 1550px){
+  #bottom-navbar ul li a {
+    font-size: 1rem;
+  }
+  #buttonPic{
+    font-size: 3rem;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+  }
 }
