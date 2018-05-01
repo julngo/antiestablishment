@@ -1,5 +1,6 @@
 var vid = document.getElementById("bideo");
 var nav = document.getElementById("top-navbar");
+var bottomNav = document.getElementById("bottom-navbar");
 var playButton = document.getElementById("buttonPic");
 var closeButton = document.getElementById("buttonClose");
 
@@ -11,11 +12,14 @@ function playVideo(){
     //video plays
     vid.style.opacity= 1;
     vid.play();
-    //top nav bar disappear
+    // nav bar disappear
     nav.style.opacity= 0;
+    bottomNav.style.opacity = 0;
+    $("#top-navbar").removeClass("slideDown");
+    $('#bottom-navbar').removeClass("slideUp");
     //button disappear
     playButton.style.opacity= 0;
-    closeButton.style.opacity= 0.5;
+    closeButton.style.opacity= 0.15;
     vidBg.style.opacity = 0;
 }
 
@@ -36,11 +40,15 @@ $('#buttonPic').hover(function(){
 $('#buttonClose').hover(function(){
   $(this).css('opacity','1');
 }, function(){$(this).css('opacity','0.5')});
+
 function videoEnd(){
   $('#buttonPic').css('z-index', '50');
   $('#buttonClose').css('z-index', '-5');
+  $("#top-navbar").addClass("slideDown");
+  $('#bottom-navbar').addClass("slideUp");
   //top nav bar appear
   nav.style.opacity= 1;
+  bottomNav.style.opacity= 1;
   //button appear
   playButton.style.opacity= 0.5;
   closeButton.style.opacity= 0;
@@ -58,7 +66,7 @@ function stopVideo(){
 	var scale = 1.05;
 	var container = $('#bideoBg')[0];
 	getContainerDimensions();
-	var offset = ((scale - Math.floor(scale)) / 5) * 100;
+	var offset = ((scale - Math.floor(scale)) / 4.5) * 100;
 
 	scale = "scale(" + scale + ")";
 	container.style.webkitTransform = scale;

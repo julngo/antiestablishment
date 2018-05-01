@@ -10,7 +10,8 @@ $( document ).ready(function() {
   $('.e-left').each(function(key, val){
     var path = "url(../img/town/event"+(key+1)+".jpg)";
     $(this).css('background-image', path);
-  })
+  });
+
 });
 
 $('.news-title h2').click(function(){
@@ -22,3 +23,9 @@ $('.news-title h2').click(function(){
   scrollTop: ($('.news').offset().top)
 }, 250);
 });
+
+$('#to-top').click(function(){
+  $('html, body').animate({
+    scrollTop: ($('#page-top').offset().top)
+  }, 500);
+})

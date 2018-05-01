@@ -13,6 +13,7 @@
 
   <!-- Custom fonts for this template -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -61,11 +62,46 @@
       <img src="img/green-right-arrow.png">
     </div>
     <div id="profileInfo">
-      <h1 id="profile-name"></h1>
-      <p id="profile-info"></p>
-    </div>
-    <div id="profilePic">
-      <img/>
+      <div class="row">
+        <div class="col-md-3">
+          <div id="profilePic">
+          </div>
+        </div>
+        <div class="col-md-2" style="flex: 0 0 12.5%; max-width: 12.5%;">
+          <h1>Name</h1>
+          <p>Bio</p>
+        </div>
+        <div class="col-md-7" style="flex: 0 0 62%; max-width: 62%;">
+          <h1><span id="profile-name"></span></h1>
+          <p><span id="profile-info"></span></p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-1">
+          <p>Status</p>
+          <p>DOB</p>
+          <p>Height</p>
+          <p>Race</p>
+          <p>Hair</p>
+          <p>Eyes</p>
+        </div>
+        <div class="col-md-2">
+          <p><span id="profile-status"></span></p>
+          <p><span id="profile-dob"></span></p>
+          <p><span id="profile-height"></span></p>
+          <p><span id="profile-race"></span></p>
+          <p><span id="profile-hair"></span></p>
+          <p><span id="profile-hair"></span></p>
+        </div>
+        <div class="col-md-2" style="flex: 0 0 12.5%; max-width: 12.5%;">
+          <p>Recent<br>Report</p>
+        </div>
+        <div class="col-md-7" style="flex: 0 0 62%; max-width: 62%;">
+          <p><span id="profile-report"></span></p>
+        </div>
+      </div>
+      <div id="stamp"></div>
     </div>
     <div class="tabs">
       <span></span>
