@@ -50,12 +50,12 @@ var charactersInfo = [
   },
   {
     name: "Esha Sharma",
-    des: "Esha is the Mayor of Imdy. ",
-    rep: "Recent investigation has shown that she's been collecting money 'under the table' to help pass laws that allows for mining in the town. She believes that having the mining corporation in the town is beneficial because it is creating jobs.",
+    des: "Esha is the Mayor of Imdy.",
+    rep: "Rumor has it that she's been collecting money 'under the table' to help pass laws that allows for mining in the town. She believes that having the mining corporation in the town is beneficial because it is creating jobs.",
     status: "Alive",
     dob: "06/23/1970",
     height: "5'1",
-    race: "Indian",
+    race: "Asian",
     hair: "Black",
     eyes: "Brown",
     img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
