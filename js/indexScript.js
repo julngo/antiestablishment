@@ -3,7 +3,7 @@ var nav = document.getElementById("top-navbar");
 var bottomNav = document.getElementById("bottom-navbar");
 var playButton = document.getElementById("buttonPic");
 var closeButton = document.getElementById("buttonClose");
-
+var menuToggle = 0;
 var vidBg = document.getElementById("bideoBg");
 
 function playVideo(){
@@ -26,16 +26,29 @@ function playVideo(){
 vid.onended = function(){
   videoEnd();
 }
-$('#bottom-navbar li').hover(function(){
-  $('#hoverSound').get(0).play();
-}, function(){
-  $('#hoverSound').get(0).pause();
+$( window ).resize(function() {
+  menuButton();
 });
+function menuButton(){
+  if($(window).width()<600){
+    $('#smallMenu').css('display','block');
+  }else{
+    $('#smallMenu').css('display','none');
+  }
+}
+$('#smallMenu').click(function(){
+  if(menuToggle==0){
+    $('#bottom-navbar').css('height','auto');
+    menuToggle=1;
+  }else if(menuToggle==1){
+    $('#bottom-navbar').css('height','10vh');
+    menuToggle=0; 
+  }
+});
+
 $('#buttonPic').hover(function(){
   $(this).css('opacity','1');
-  $('#hoverSound').get(0).play();
 }, function(){$(this).css('opacity','0.5')
-  $('#hoverSound').get(0).pause();
 });
 $('#buttonClose').hover(function(){
   $(this).css('opacity','1');

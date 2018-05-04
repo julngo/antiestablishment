@@ -94,7 +94,7 @@ var charactersInfo = [
     race: "Caucasian",
     hair: "Blonde",
     eyes: "Blue",
-    img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
+    img: "../img/files/hennesey.jpg"
   },
   {
     name: "Chief Meija",

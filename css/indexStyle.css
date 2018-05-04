@@ -54,6 +54,7 @@ body{
   font-size: 5rem;
   cursor: pointer;
   z-index: 100;
+  margin-top: -2.5%;
 }
 #buttonPic span, #buttonPic i{
   vertical-align: middle;
@@ -103,7 +104,6 @@ body{
     text-transform: uppercase;
     font-size: 1.25rem;
     letter-spacing: 0.15rem;
-    display: block;
     padding: 1.25rem;
     color: white;
     display: inline-flex;
@@ -137,7 +137,7 @@ body{
 }
 #top-navbar ul li {
     float: left;
-    font-family: 'Raleway', sans-serif;
+    vertical-align: middle;
 }
 #top-navbar ul li p {
     display: block;
@@ -179,6 +179,51 @@ body{
   height: 75px;
 }
 /* responsive stuff */
+@media (min-width: 1024px) and (max-width: 1550px){
+  #bottom-navbar ul li a {
+    font-size: 1rem;
+  }
+  #buttonPic{
+    font-size: 3rem;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
+  #top-navbar{
+    margin-top: 10px;
+  }
+  #top-navbar ul li p{
+    padding: 7.5px 0;
+    font-size: 0.75rem;
+  }
+  #bottom-navbar{
+    height: 50px;
+  }
+  #bottom-navbar ul{
+    display: block;
+  }
+  #bottom-navbar ul li{
+    width: 100%;
+  }
+  #bottom-navbar ul li a{
+    padding: 7.5px 0;
+    font-size: 0.9rem
+  }
+  #buttonPic{
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+  }
+  #smallMenu{
+    padding-bottom: 12.5px!important;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1550px){
   #bottom-navbar ul li a {
     font-size: 1rem;
