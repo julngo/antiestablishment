@@ -39,7 +39,7 @@ var charactersInfo = [
   {
     name: "Mark Wang",
     des: "Mark has been working under Fiora since she began working in Imdy. He assists in her research, but also runs her coffee. He has a quiet, attentive personality which makes him the perfect staff assistant. It may also mean he has seen things that others do not.",
-    rep: "Unlike Fiora, Mak has been keeping a public profile since Tobias's murder. He is often seen wandering the shops of main street. He only disappears when meetings are called at the Establishment Mining Corps. What has he seen?",
+    rep: "Unlike Fiora, Mark has been keeping a public profile since Tobias's murder. He is often seen wandering the shops of main street. He only disappears when meetings are called at the Establishment Mining Corps. What has he seen?",
     status: "Alive",
     dob: "05/22/1993",
     height: "5'9",
