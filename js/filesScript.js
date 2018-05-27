@@ -10,7 +10,7 @@ var charactersInfo = [
     race: "Caucasian",
     hair: "Brown",
     eyes: "Dark brown",
-    img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
+    img: "../img/files/tk.jpg"
   },
   {
     name: "Nadia Kowalski",
@@ -22,7 +22,7 @@ var charactersInfo = [
     race: "Caucasian",
     hair: "Dark Brown",
     eyes: "Light Brown",
-    img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
+    img: "../img/files/nk.jpg"
   },
   {
     name: "Fiora S",
@@ -34,7 +34,7 @@ var charactersInfo = [
     race: "Asian",
     hair: "Black",
     eyes: "Dark Brown",
-    img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
+    img: "../img/files/fs.jpg"
   },
   {
     name: "Mark Wang",
@@ -46,7 +46,7 @@ var charactersInfo = [
     race: "Asian",
     hair: "Black",
     eyes: "Dark Brown",
-    img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
+    img: "../img/files/mw.jpg"
   },
   {
     name: "Esha Sharma",
@@ -58,7 +58,7 @@ var charactersInfo = [
     race: "Asian",
     hair: "Black",
     eyes: "Brown",
-    img: "https://thumbs.dreamstime.com/b/businesswoman-profile-icon-female-portrait-flat-design-vector-illustration-47075240.jpg"
+    img: "../img/files/es.jpg"
   },
   {
     name: "Axel Kimberly",
@@ -70,7 +70,7 @@ var charactersInfo = [
     race: "Caucasian",
     hair: "Black",
     eyes: "Hzel",
-    img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
+    img: "../img/files/ak.jpg"
   },
   {
     name: "Jim Morgan",
@@ -82,7 +82,7 @@ var charactersInfo = [
     race: "Caucasian",
     hair: "Brown",
     eyes: "Brown",
-    img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
+    img: "../img/files/jm.jpg"
   },
   {
     name: "John Hennesey",
@@ -94,7 +94,7 @@ var charactersInfo = [
     race: "Caucasian",
     hair: "Blonde",
     eyes: "Blue",
-    img: "../img/files/hennesey.jpg"
+    img: "../img/files/jh.jpg"
   },
   {
     name: "Chief Meija",
@@ -106,7 +106,7 @@ var charactersInfo = [
     race: "Hispanic",
     hair: "Black",
     eyes: "Dark brown",
-    img: "https://previews.123rf.com/images/gmast3r/gmast3r1506/gmast3r150600130/41187690-businessman-profile-icon-male-portrait-business-man-flat-design.jpg"
+    img: "../img/files/cm.jpg"
   },
   {
     name: "Dr. Park",
